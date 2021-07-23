@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-    Model Viewer
+    AR Experience 
     </title>
     <script type="module" 
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+    <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
     </script>
     <style>
        model-viewer
@@ -34,14 +37,24 @@
         <p> 
         TROUBLE SHOOTING: <a href="https://www.neurindustries.com">Click Here</a> 
         </p>
-  </head> 
-       <model-viewer 
-        src="assets/Ceiling2.glb" 
-        camera-controls auto-rotate 
-        ar-modes="scene-viewer webxr quick-look"
-        ar ar-scale="fixed" 
-        ar-placement="floor" 
-        ios-src="assets/Ceiling2.usdz">
-       </model-viewer>
+        </head> 
+        <model-viewer 
+             src="assets/Ceiling2.glb" 
+             camera-controls auto-rotate 
+             ar-modes="scene-viewer webxr quick-look"
+             ar ar-scale="fixed" 
+             ar-placement="floor" 
+             ios-src="assets/Ceiling2.usdz">
+        </model-viewer>
+        <button onclick="myFunction()" 
+            id="view-specs" 
+            style="display:none;background-color: #1583C4;color: white; border-radius: 0px; border: none; position: absolute; top: 60px; center: 0px;width: 25%; left:25px; height: 50px;"> 
+            View Specs
+        </button>
+        <button onclick="myFunctionRequest()" 
+            id="order-sample" 
+            style="display:none;background-image:url('https://plain-hulking-stop.glitch.me/index.html');color: white; border-radius: 0px; border: none; position: absolute; top: 800px;right:55px;center: 0px;width:75%; height: 50px;"> 
+            Sample Request
+        </button>
     </body>
 </html>
