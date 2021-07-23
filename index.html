@@ -1,31 +1,3 @@
-<!<!DOCTYPE html >
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Viewer</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-       model-viewer{
-        width: 380px ;
-        height: 600px  ;
-        margin: 0 auto;
-	   }
-       </style>
-    </head>
-    <body>
-       <model-viewer 
-     src="assets/Ceiling2.glb" 
-     camera-controls auto-rotate 
-     ar-modes="scene-viewer webxr quick-look"
-     ar ar-scale="fixed" 
-     ar-placement="floor" 
-     ios-src="assets/Ceiling2.usdz">
-     </model-viewer>
-     </body>
-     </htmk>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,12 +19,12 @@
   <body>
       <div id="card">
       <model-viewer 
-      id="model-viewer" 
-      src="https://cdn.glitch.com/705ccafe-1195-46d2-b6a2-dc246d16e26d%2FFinalModelAnimated.glb?v=1621137478614" 
-      shadow-intensity="1" 
-      ar ar-modes="webxr quick-look" 
-      camera-controls ar-placement="wall">
-        <a id="ar-link" rel="ar" href="https://cdn.glitch.com/bef5d249-9f90-453e-93f4-04e93a9fa798%2FFinalModel.usdz#custom=https://plain-hulking-stop.glitch.me/index.html&allowsContentScaling=0">  <img src="https://cdn.glitch.com/1a82ec2f-c557-41a0-b502-a90dbc93a23a%2FActivate.jpeg?v=1619532878960" 
+        src="assets/Ceiling2.glb" 
+           camera-controls auto-rotate 
+           ar-modes="scene-viewer webxr quick-look"
+           ar ar-scale="fixed" 
+           ar-placement="floor" 
+        ios-src="assets/Ceiling2.usdz">  <img src="https://cdn.glitch.com/1a82ec2f-c557-41a0-b502-a90dbc93a23a%2FActivate.jpeg?v=1619532878960" 
           id = "ios-button" 
           style="display:none; background-color: #1583C4;color: white; border-radius: 0px; border: none; position: absolute; top: 0px; center: 0px;width: 100%; height: 50px; "> 
         </a>
