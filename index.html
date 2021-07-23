@@ -1,6 +1,6 @@
 <!<!DOCTYPE html >
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -10,21 +10,38 @@
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
     <style>
-       model-viewer{
+       model-viewer
+       {
         width: 380px ;
         height: 600px  ;
         margin: 0 auto;
 	   }
     </style>
-</head>
+  </head>
     <body>
+        <h1>
+        Instructions:-
+        </h1>
+        <p>
+        1. Click on the blue "Activate AR" button at the top of the panel. Choose a spacious, textured surface. Android devices require Google Chrome for accurate use.
+        </p>
+        <p>
+        2. Follow the instructions on your device’s screen to place the 600 x 600 panel. The panel will lock to the surface at a scale of 1:1. Android users will have to switch to Vertical Link for wall placement.
+        </p>
+        <p>
+        3. You can move the panel along the surface by dragging with 1 finger OR spin on the vertical axis using 2 fingers. IOS devices will be able to switch between vertical and horizontal surfaces on the same link.
+        </p>
+        <p> 
+        TROUBLE SHOOTING: <a href="www.neurindustries.com">Click Here</a> 
+        </p>
+  </head> 
        <model-viewer 
-     src="assets/Ceiling2.glb" 
-     camera-controls auto-rotate 
-     ar-modes="scene-viewer webxr quick-look"
-     ar ar-scale="fixed" 
-     ar-placement="floor" 
-     ios-src="assets/Ceiling2.usdz">
-     </model-viewer>
+        src="assets/Ceiling2.glb" 
+        camera-controls auto-rotate 
+        ar-modes="scene-viewer webxr quick-look"
+        ar ar-scale="fixed" 
+        ar-placement="floor" 
+        ios-src="assets/Ceiling2.usdz">
+       </model-viewer>
     </body>
-     </html>
+</html>
